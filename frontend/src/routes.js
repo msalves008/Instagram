@@ -1,12 +1,16 @@
-import { Switch, Routes} from 'react-router-dom'
+import React from 'react'
+import { Switch, Route} from 'react-router-dom'
 
 import Feed from './pages/Feed'
 import New from './pages/New'
-//video 14:40
+//video 17:00
 function Routes(){
     return(
-        <Route path= "/" component={Feed}/>
-        <Route path= "/new" component={New}/>
-
-    )
+        <Switch>
+            <Route path= "/" exact component={Feed}/>
+            <Route path= "/new" component={New}/>
+        </Switch>
+    );
 }
+
+export default Routes

@@ -10,7 +10,7 @@ module.exports = {
     },
 
     async store(req,res){
-        const { author,place, description, hashtags } = req.body
+        const { author,place, description,hashtags } = req.body
         const { filename: image} = req.file
         
         const [name] = image.split('.')
@@ -20,7 +20,7 @@ module.exports = {
             .resize(500) // redimenciona a imagem em ate 500px
             .jpeg({quality:70}) // salva como Jpeg, com qualidade de 70%
             .toFile(
-                path.resolve(req.file.destination, 'resized', fileName)// salvando a imagem configurada na pasta resized
+                path.resolve(req.file.destination, 'resized', image)// salvando a imagem configurada na pasta resized
             )
     fs.unlinkSync(req.file.path)// apagando imagem original da pasta
         
@@ -30,7 +30,7 @@ module.exports = {
             place,
             description,
             hashtags,
-            fileName,
+            image,
         })
         req.io.emit('post', post)
 

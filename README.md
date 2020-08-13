@@ -1,30 +1,13 @@
 # Instagram
 
 # Sobre o projeto
-
+Este projeto foi criado com fins didaticos onde tiver como principal objetivo adquirir novos conhecimentos nas técnoligias citadas abaixo 
 # Técnologias
-
+NodeJS, React & MongoDB 
 # Dependências
 
 ### Back-End
 yarn, express, mongoose, multer, sharp, cors, socket.io
-
-#### Comandos 
-yarn  init -y
-
-yarn add express
-
-yarn add nodemon -d
-
-yarn add mongoose
-
-yarn add multer
-
-yarn add sharp
-
-yarn cors
-
-yarn socket.io
 
 #### Como instalar as Depêndencias 
 Basta digitar **yarn install no terminal**
@@ -35,7 +18,6 @@ Basta digitar **yarn install no terminal**
 Para iniciar o back-end digite  **yarn dev**  no terminal da pasta do back-end.
 
 ## Front-End
-
 
 # Layout/Resultado final
 ## Frontend

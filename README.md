@@ -1,7 +1,9 @@
 # Instagram
 
 ### Sobre o projeto
-Este projeto foi criado com fins didaticos onde tiver como principal objetivo adquirir novos conhecimentos nas técnoligias citadas abaixo 
+Este projeto foi criado com fins didaticos onde tiver como principal objetivo adquirir novos conhecimentos nas técnoligias citadas abaixo,
+Neste projeto foi desenvolvido uma interface web do instagram onde o usuário poderia fazer novas postagem através de upload de imagens.
+
 ### Técnologias
 NodeJS, React & MongoDB 
 
